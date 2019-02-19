@@ -8,7 +8,7 @@ const INMUTABLE_CACHE = 'inmutable_v1';
 const CACHE_DYNAMIC_LIMIT = 50;
 
 const APP_SHELL = [
-    '/',
+    //'/',
     'index.html',
     'img/favicon.ico',
     'css/style.css',

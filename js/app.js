@@ -1,7 +1,12 @@
+var url = window.location.href;
+var swLocation = '/twittor/sw.js';
 
 // register service worker
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('sw.js')
+    if (url.includes('localhost')) {
+        swLocation = '/sw.js';
+    } 
+    navigator.serviceWorker.register(swLocation)
     .then(reg => {
         console.log('ServiceWorker registration successful with scope: ', reg.scope);
     })
