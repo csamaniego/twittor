@@ -23,6 +23,12 @@
   display: none !important;
 }
 
+p.notification-msg {
+  margin: 0;
+  padding: 0;
+  font-size:12px;
+}
+
 .seleccion {
   margin-top: 6em;
   display: block;
