@@ -11,7 +11,7 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
-    
+
     overscroll-behavior-y: contain;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
@@ -266,8 +266,6 @@ textarea {
 and (device-width : 375px) 
 and (device-height : 812px) 
 and (-webkit-device-pixel-ratio : 3) {
-  
-    
     #titulo, #titulo-mensaje {
       position: relative;
       top: 10px;
