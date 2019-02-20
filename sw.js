@@ -36,7 +36,7 @@ self.addEventListener('install', e => {
     const cache_inmutable = caches.open( INMUTABLE_CACHE )
         .then( cache => cache.addAll(APP_SHELL_INMUTABLE));
 
-    e.waitUntil( Promise.all([cache_static, cache_inmutable]) );
+    e.waitUntil( Promise.all([cache_static, cache_inmutable]));
 });
 
 // delete old caches
