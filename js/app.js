@@ -30,7 +30,6 @@ const taskStorageEstimate = function(){
         if (navigator.storage && navigator.storage.estimate && $ && $('#header-fixed-msg')) {
         navigator.storage.estimate()
         .then((estimate) => {
-
             let mSize = (estimate.quota/(1024*1024)).toFixed(2);
             let uSize = (estimate.usage/(1024*1024)).toFixed(2);
             if (estimate.usage < 1024) {
